@@ -17,7 +17,6 @@ it('can create a volunteer', function () {
     ->and($volunteer->getAvailabilities())->toBeInstanceOf(Availabilities::class)
     ->and($volunteer->getTeam())->toBeInstanceOf(Team::class);
 
-
 });
 
 it('can save a volunteer', function () {
@@ -30,6 +29,11 @@ it('can save a volunteer', function () {
     expect($volunteerRepository->get($volunteer->getId()))->toBe($volunteer);
 
 });
+
+it('can create a volunteers from received payload', function () {
+
+})->todo();
+
 
 
 function aVolunteer(): Volunteer
