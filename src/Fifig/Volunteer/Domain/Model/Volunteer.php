@@ -7,7 +7,7 @@ use Fifig\Volunteer\Domain\Model\Entity\Team;
 use Fifig\Volunteer\Domain\Model\Entity\VolunteerInformation;
 use Fifig\Volunteer\Domain\Model\ValueObject\VolunteerId;
 
-class Volunteer
+readonly class Volunteer
 {
     public function __construct(
         private VolunteerId $id,
