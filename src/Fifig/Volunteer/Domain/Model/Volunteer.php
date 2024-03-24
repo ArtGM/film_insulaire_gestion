@@ -10,9 +10,10 @@ use Fifig\Volunteer\Domain\Model\ValueObject\VolunteerId;
 readonly class Volunteer
 {
     public function __construct(
-        private VolunteerId $id,
-        private VolunteerInformation $volunteerInformations,
-        private Availabilities $disponibilities
+        private VolunteerId          $id,
+        private VolunteerInformation $volunteerInformation,
+        private Availabilities $availabilities,
+        private Team $team
     )
     {
     }
@@ -25,16 +26,16 @@ readonly class Volunteer
 
     public function getInformations(): VolunteerInformation
     {
-        return $this->volunteerInformations;
+        return $this->volunteerInformation;
     }
 
-    public function getDisponibilities(): Availabilities
+    public function getAvailabilities(): Availabilities
     {
-        return $this->disponibilities;
+        return $this->availabilities;
     }
 
     public function getTeam()
     {
-        return new Team();
+        return $this->team;
     }
 }
