@@ -2,30 +2,35 @@
 
 namespace Fifig\Volunteer\Domain\Model;
 
+use Fifig\Volunteer\Domain\Model\Entity\Availabilities;
 use Fifig\Volunteer\Domain\Model\Entity\Team;
+use Fifig\Volunteer\Domain\Model\Entity\VolunteerInformation;
+use Fifig\Volunteer\Domain\Model\ValueObject\VolunteerId;
 
 class Volunteer
 {
     public function __construct(
-        private string $id
+        private VolunteerId $id,
+        private VolunteerInformation $volunteerInformations,
+        private Availabilities $disponibilities
     )
     {
     }
 
 
-    public function getId()
+    public function getId(): VolunteerId
     {
         return $this->id;
     }
 
-    public function getInformations()
+    public function getInformations(): VolunteerInformation
     {
-        return [];
+        return $this->volunteerInformations;
     }
 
-    public function getDisponibilities()
+    public function getDisponibilities(): Availabilities
     {
-        return [];
+        return $this->disponibilities;
     }
 
     public function getTeam()
