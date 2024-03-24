@@ -6,10 +6,16 @@ use Fifig\Volunteer\Domain\Model\Entity\Team;
 
 class Volunteer
 {
+    public function __construct(
+        private string $id
+    )
+    {
+    }
+
 
     public function getId()
     {
-        return '123e4567-e89b-12d3-a456-426614174000';
+        return $this->id;
     }
 
     public function getInformations()
