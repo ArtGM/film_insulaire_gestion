@@ -102,11 +102,11 @@
         }
     },
     "require-dev": {
-        "roave/security-advisories": "dev-latest"
-        ,
-        "pestphp/pest": "^1.23",
+        "pestphp/pest": "^2.34.5",
+        "pestphp/pest-plugin-watch": "^2.1",
         "phpstan/phpstan": "^1.10",
-        "phpunit/phpunit": "^9.5",
+        "phpunit/phpunit": "^10.5.15",
+        "roave/security-advisories": "dev-latest",
         "symfony/browser-kit": "6.4.*",
         "symfony/css-selector": "6.4.*",
         "symfony/debug-bundle": "6.4.*",
