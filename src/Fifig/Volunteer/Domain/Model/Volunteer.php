@@ -2,9 +2,9 @@
 
 namespace Fifig\Volunteer\Domain\Model;
 
-use Fifig\Volunteer\Domain\Model\Entity\Availabilities;
-use Fifig\Volunteer\Domain\Model\Entity\Team;
-use Fifig\Volunteer\Domain\Model\Entity\VolunteerInformation;
+use Fifig\Volunteer\Domain\Model\ValueObject\Availabilities;
+use Fifig\Volunteer\Domain\Model\ValueObject\Team;
+use Fifig\Volunteer\Domain\Model\ValueObject\VolunteerInformation;
 use Fifig\Volunteer\Domain\Model\ValueObject\VolunteerId;
 
 readonly class Volunteer

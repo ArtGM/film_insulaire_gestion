@@ -1,6 +1,6 @@
 <?php
 
-namespace Fifig\Volunteer\Domain\Model\Entity;
+namespace Fifig\Volunteer\Domain\Model\ValueObject;
 
 class Availabilities
 {

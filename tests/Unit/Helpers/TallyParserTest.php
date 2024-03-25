@@ -17,6 +17,6 @@ JSON;
     $parsedPayload = $parser->parse($payload);
 
     expect($parsedPayload)->toMatchArray(
-            json_decode($expectedPayload, true)
-        );
+        json_decode($expectedPayload, true, 512, JSON_THROW_ON_ERROR)
+    );
 });
